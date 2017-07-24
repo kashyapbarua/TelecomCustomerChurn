@@ -48,3 +48,10 @@ resamples <- resamples(model_list)
 
 # Summarize the results
 summary(resamples)
+
+#Create a box-and-whisker plot for comparison
+bwplot(resamples, metric = "ROC")
+
+#Create a scatterplot for comparison again
+# Create xyplot
+xyplot(resamples, metric = "ROC")
